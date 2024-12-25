@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyKy</title>
+  <link rel="icon" type="image/x-icon" href="../unicorn.png">
+  <style>
+    @font-face {
+      font-family: 'Finest Vintage';
+      src: url('fonts/FinestVintageRegular.otf') format('opentype');
+    }
+
+    body {
+      background-color: rgb(251, 212, 212);
+
+    }
+
+    .buttons-holder {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr ;
+      position: fixed;
+      top: 20px;
+      bottom: 20px;
+      right: 20px;
+      left: 20px;
+      row-gap: 10px;
+      column-gap: 10px;
+    }
+
+    button {
+      background-color: rgba(241, 204, 204, 0.687);
+      font-family: 'Finest Vintage';
+      font-size: x-large;
+      color: rgb(38, 118, 29);
+      border-radius: 20px;
+      border-width: 2px;
+      border-color: rgb(38, 118, 29);
+
+      transition: 0.15s;
+      width: 100%;
+      height: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button:active {
+      background-color: rgba(241, 231, 231, 0.5);
+    }
+
+    .a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .b {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Ensures it's behind other elements */
+  opacity: 0.5;
+}
+  </style>
+</head>
+<img src="texture.jpeg" class="background">
+
+<body>
+  <div class="buttons-holder">
+    <a href="Monologue remover/index.html">
+      <button class='a'>
+        Monologue Remover
+      </button>
+    </a>
+    <a href="RPS game/index.html">
+      <button class='b'>
+        RPS Game
+      </button>
+    </a>
+    <a href="Font Picker/index.html">
+      <button class='b'>
+        Font Picker
+      </button>
+    </a>
+    <a href="Mouse tracker/index.html">
+      <button class='b'>
+        Mouse Tracker
+      </button>
+    </a>
+  </div>
+  <a href="https://www.flaticon.com/free-icons/unicorn" title="unicorn icons">Favicon created by Smashicons - Flaticon</a>
+</body>
+</html>

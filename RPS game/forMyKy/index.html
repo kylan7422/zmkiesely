@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="../unicorn.png">
+  <style>
+    @font-face {
+  font-family: 'Finest Vintage';
+  src: url('fonts/FinestVintageRegular.otf') format('opentype');
+}
+body{
+  background-color: rgb(237, 237, 237);
+}
+
+header{
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  left:5px;
+  padding:10px;
+  border-radius: 10px;
+  border-color: rgba(175, 168, 168, 0.642);
+  border-width: 2px;
+  border-style: solid;
+  color:rgb(108, 100, 90)
+}
+.buttons-holder{
+  position: fixed;
+  top:30%;
+  right: 50%;
+  transform: translate(50%, -50%) ;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.history{
+  position:fixed;
+  bottom: 30%;
+  left: 0;
+  background-color: burlywood;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: rgb(83, 79, 73);
+}
+button{
+  background-color: rgb(206, 185, 185);
+  border-width: 0;
+  margin: 3px;
+  padding:50px 0;
+  border-radius: 20%;
+  font-size: 30px;
+  transition: all 0.2s ease;
+}
+.noti{
+  position:fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: larger;
+  background-color: aliceblue;
+  border-radius: 20px;
+  border-color: rgb(206, 184, 158);
+  border-style: solid;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+  transform: translate(-100%, 0);
+  transition: 0.5s;
+}
+.noti-onclick{
+  transform: translate(0, 0);
+}
+button:hover {
+  transform: scale(1.1);
+}
+@media (min-width: 768px) {
+  .buttons-holder {
+    width: 60%;
+  }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div>Rock, Paper, Scissor game ✊🖐️✌️</div>
+    <div>Game built for My Ky🫶</div>
+  </header>
+  <main>
+    <section class="buttons-holder">
+      <button class="rock-button">✊</button>
+      <button class="paper-button">🖐️</button>
+      <button class="scissor-button">✌️</button>
+   </section>
+    <p class="history">
+      Wins: <br>Losses: <br> Ties:
+    </p>
+    <div class="noti">
+      <p>
+        If you are Mỹ Kỳ, congratulation! You have won. You are the best.  I love you so much😘 Reload the page to play again 🙆‍♂️.
+    </p>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
